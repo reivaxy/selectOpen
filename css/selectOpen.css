@@ -1,0 +1,7 @@
+
+div.selectOpenlLink {
+  background-color: #FDD;
+  display: none;
+  cursor: pointer;
+  z-index: 100;
+}
