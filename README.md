@@ -4,7 +4,7 @@ This is a tiny Chrome extension that allows to open Jira tickets from a page (le
 
 This version is currently hard coded to open on a specific Jira instance.
 
-When a selection in the current page contains some Jira ticket IDs of the form ABCDE-1234 it adds a clickable tooltip to open the matching Jira ticket pages.
+When a selection in the current page contains some Jira ticket IDs of the form ABCD-12345 (3 to 4 letters dash 3 to 5 digits) it adds a clickable tooltip to open the matching Jira ticket pages.
 
 <img src='http://adgjm.eu/img/github/jira1.png'/>
 
