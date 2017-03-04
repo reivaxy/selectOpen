@@ -1,15 +1,15 @@
 
 div.selectOpenlLink {
-  background-color: #f1f8ff;
+  background-color: #cfe8ff;
   border-top: 1px dashed blue;
   border-right: 1px dashed blue; 
   border-left: 1px dashed blue; 
   display: none;
   cursor: pointer;
-  z-index: 100;
+  z-index: 1000;
 }
 
 div.selectOpenlLink div {
   border-bottom: 1px dashed blue;
-  padding: 0 3px;
+  padding: 1px 3px;
 }

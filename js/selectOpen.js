@@ -28,7 +28,7 @@
     
     if(tickets && tickets.length) {
       // Position the ticket link container near the mouse
-      var yOffset = 2 * tickets.length + 0.3;
+      var yOffset = tickets.length + 0.3;
       link.setAttribute('style', 'display: block;position:fixed;top:calc(' + evt.clientY + 'px - ' + yOffset + 'em);left: calc(' + evt.clientX + 'px + 1em)');
       link.innerHTML = '';
       // Add one link per ticket matched
