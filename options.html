@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SelectOpen options</title>
+  <link rel="stylesheet" href="css/options.css" type="text/css">
+</head>
+<body>
+
+<div id="main">
+  <h1>SelectOpen options</h1>
+  <label>
+    Jira Url:&nbsp;
+    <input type="input" id="jiraUrl">
+    Type the url used to access your Jira instance. The ticket ID will be added to this url.
+  </label>
+  <br/>
+  <br/>
+  
+  <label>
+    Minimum letter count in project names:
+    <input type="number" id="minProject" min="1" max="10"/>
+    Maximum letter count in project names:
+    <input type="number" id="maxProject" min="1" max="10"/>
+  </label>
+  <br/>
+  <br/>
+  <label>
+    Minimum digit count in ID:
+    <input type="number" id="minID" min="1" max="10"/>
+    Maximum digit count in ID:
+    <input type="number" id="maxID" min="1" max="10"/>
+  </label>
+  
+  <br/>
+  <br/>
+  <button id="save">Save</button>
+  <div id="status"></div>
+</div>
+
+<script src="js/restoreOptions.js"></script>
+<script src="js/options.js"></script>
+</body>
+</html>
