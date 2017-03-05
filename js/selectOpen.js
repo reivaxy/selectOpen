@@ -10,8 +10,9 @@
     link = document.createElement('div');
     link.className = 'selectOpenlLink';
     link.addEventListener('mousedown', function(evt) {
-      if(evt.target._data) {
-        window.open(options.jiraUrl + evt.target._data);
+      var url = evt.target.getAttribute('title');
+      if(url) {
+        window.open(url);
       }
     });
   
@@ -43,8 +44,8 @@
           count ++;
           var ticketDiv = document.createElement('div');
           ticketDiv.appendChild(document.createTextNode('Open ' + ticketTxt + ' in Jira'));
-          // Keep ticket id to build link
-          ticketDiv._data = ticketTxt;
+          var url = options.jiraUrl.replace(/\/?$/, '/') + ticketTxt;
+          ticketDiv.setAttribute('title', url);
           link.appendChild(ticketDiv);
         }
       // Position the ticket link container near the mouse
