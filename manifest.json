@@ -3,7 +3,7 @@
 
   "name": "Select and Open",
   "description": "This extension opens a tab depending on the current selected text",
-  "version": "2.0",
+  "version": "2.1",
   "author": "Xavier Grosjean",
 
   "permissions": [
